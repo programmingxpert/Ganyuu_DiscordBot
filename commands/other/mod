@@ -1,0 +1,19 @@
+const { Command } = require('discord.js-commando');
+
+module.exports = class WhoMadeMeCommand extends Command {
+  constructor(client) {
+    super(client, {
+      name: 'mod',
+      aliases: ['mod'],
+      memberName: 'mod',
+      group: 'test',
+      description: "Learn about the bot and it's creator!"
+    });
+  }
+
+  run(message) {
+    message.channel.send(
+      'We are currently not looking for new Moderators <:aqua_wut:779319643768225812> . However, when we have vacant positions for mod we will announce it in <a:PaiPrimo:851126872763006988><a:PaiPrimo:851126872763006988><a:PaiPrimo:851126872763006988>#announcements so keep updated <a:DJvibe:789025754301464576><a:DJvibe:789025754301464576> with <:QT_wave:862203725556613151> MIRACLE!!! <:QT_wave:862203725556613151>'
+    );
+  }
+};
